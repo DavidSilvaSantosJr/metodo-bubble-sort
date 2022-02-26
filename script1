@@ -1,0 +1,58 @@
+mport numpy
+import datetime
+
+valores = list()
+valores500 = list()
+valores1000 = list()
+valores2000 = list()
+valores5000 = list()
+valores10000 = list()
+valores50000 = list()
+valores100000 = list()
+inicio = fim = 0
+
+#função conronometrar tempo de execução ddas funções
+def tempoExecuçao(inicio, fim):
+    fim =  datetime.datetime.now() 
+    inicio = datetime.datetime.now()
+    tempoExecuçao = inicio - fim
+    return tempoExecuçao
+
+#função para gerar e adicionar números aleatórios
+def inserirOrdenar(valores):
+    inicio
+    num = randint(0, 100)
+    valores.append(num)
+    #ordenar - buble sort
+    for passnum in range(len(valores)-1,0,-1):
+        for i in range(passnum):
+            if valores[i]>valores[i+1]:
+                temp = valores[i]
+                valores[i] = valores[i+1]
+                valores[i+1] = temp
+    fim
+    return inserirOrdenar
+#contagem do duração do processo 
+tempoExecução500 = tempoExecuçao1000 = 0
+
+# programa prncipal
+
+#gerar 500 valores 
+for gerar500 in range(500):
+    inserirOrdenar(valores500)
+tempo500 = tempoExecuçao(fim, inicio)
+print(f'{valores500}\ntempo de execução 500 valores: {tempo500}')
+
+#gerar 1000 valores
+for gerar1000 in range(1000):
+    inserirOrdenar(valores1000)
+    tempoExecuçao(fim, inicio)
+tempo1000 = tempoExecuçao(fim, inicio)
+print(f'{valores1000}\ntempo de execução 1000 valores:{tempo1000}')
+
+#gerar 10000 valores
+for gerar10000 in range(5000):
+    inserirOrdenar(valores10000)
+    tempoExecuçao(fim, inicio)
+tempo10000 = tempoExecuçao(fim, inicio)
+print(f'{valores10000}\ntempo de execução 1000 valores:{tempo10000}')
