@@ -1,0 +1,42 @@
+from random import randint
+import numpy
+from datetime import datetime
+somarInicioContagem = somarFimContagem = 0
+####funções ###
+#cronometrar
+def contarValores(i, f):
+    tempoExecutar = f - i
+    return contarValores
+#executar geração de vetores
+
+qtdValorVetores = [5, 6, 7]
+
+def adicionarValores(valores):
+    for i in range(len(qtdValorVetores)):
+            for r in range(qtdValorVetores[i]):
+                valores[i].append(randint(0, 20))
+    return adicionarValores
+#ordenar - bubble sort
+def ordenar(valoress):
+    
+    for v in valoress:
+        i = datetime.now()
+        somarInicioContagem = datetime.timestamp(i)
+        for passnum in range(len(valoress)-1,0,-1):
+            for i in range(passnum):
+                if valoress[i]>valoress[i+1]:
+                    temp = valoress[i]
+                    valoress[i] = valoress[i+1]
+                    valoress[i+1] = temp
+        f = datetime.now()
+        somarFimContagem = datetime.timestamp(f)
+    return ordenar
+####exibição dos vetores
+vetorFinal = [[ ], [ ], [ ]]
+adicionarValores(vetorFinal)
+for vetores in vetorFinal:
+    ordenar(vetores)
+    valorcont = contarValores(somarInicioContagem, somarFimContagem)
+    print(f'ordernar {len(vetores)} valores no vetor -> {valorcont}')
+    print(vetores)
+#adicionar informações no gráfico
