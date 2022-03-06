@@ -8,6 +8,6 @@ de forma resumida, o script funciona da seguinte forma:
 
 3) o grafico com tempo de execução é gerado, e como ja era de se esperar:
   1)quanto maior o vetor, mais tempo levara para realizar a ordenarção
-  2)um vetor maior sera ordenado mais rapido que um vetor menor quando o maior tiver mais qunatidade de     valores repetidos.
-    Ex. a = [1, 1, 1, 1, 2, 2, 2, 2, 7, 24, 24, 98, 98]
-        b = [7, 7, 7, 7, 8, 8, 98] -> o vetor 'a', sera ordenado com mais velocidade.
+  2)um vetor maior sera ordenado mais rapido que um vetor menor quando o maior vetor tiver mais qunatidade de valores repetidos.
+    Ex. a = [1, 1, 1, 1, 2, 2, 2, 2, 7, 24, 24, 98, 98] -> o vetor 'a', sera ordenado com mais velocidade.
+        b = [6, 7, 8, 8, 12, 23, 56, 59,  98] -> por ter que fazer mais operações, 'b' sera mais lento que 'a'
